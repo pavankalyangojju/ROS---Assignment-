@@ -17,16 +17,16 @@ All components (Gazebo, Nav2, RViz, waypoint_manager_node, GUI) are launched tog
 # File list
 your_package/
 ├─ launch/
-│  └─ bringup_launch.py                # main launch file (starts gazebo, nav2 bringup, rviz, nodes)
+│  └─ bringup_launch.py
 ├─ config/
-│  ├─ waypoints.yaml                   # named waypoint coordinates
-│  ├─ nav2_params.yaml                 # minimal Nav2 params (or include nav2 defaults)
-│  └─ map.yaml + map.pgm               # your map for map_server (create with gmapping/Cartographer/handmade)
+│  ├─ waypoints.yaml                   
+│  ├─ nav2_params.yaml                 
+│  └─ map.yaml + map.pgm               
 ├─ rviz/
 │  └─ nav2_waypoints.rviz
 ├─ src/
-│  ├─ waypoint_manager_node.py         # ROS2 python node (action client + markers + statuspublisher)
-│  └─ gui_tkinter.py                   # Tkinter GUI that talks to waypoint_manager_node
+│  ├─ waypoint_manager_node.py         
+│  └─ gui_tkinter.py                   
 └─ package.xml / setup.py / CMakeLists.txt
 
 # waypoint YAML
@@ -48,3 +48,11 @@ Publishes /waypoint_status (std_msgs/String) for GUI status updates
 
 code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/waypoint_manager_node.py
 
+# Simple GUI (Tkinter)
+This Tkinter app:
+Shows toggle buttons for all waypoint names (hardcoded to same names as YAML — or you can load the YAML similarly),
+When user clicks Go, it sends the list as a comma-separated String on waypoint_sequence.
+Subscribes to waypoint_status to update an on-screen label.
+Stop publishes True on cancel_nav.
+
+Code :- 
