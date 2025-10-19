@@ -46,5 +46,5 @@ Subscribes to /waypoint_sequence (std_msgs/String) where the GUI publishes names
 Subscribes to /cancel_nav (std_msgs/Bool) to cancel current goal
 Publishes /waypoint_status (std_msgs/String) for GUI status updates
 
-# code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/waypoint_manager_node.py
+code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/waypoint_manager_node.py
 
