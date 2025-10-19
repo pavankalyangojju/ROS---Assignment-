@@ -45,5 +45,6 @@ Publishes RViz visualization markers for each waypoint
 Subscribes to /waypoint_sequence (std_msgs/String) where the GUI publishes names separated with commas (e.g. "station_a,station_b")
 Subscribes to /cancel_nav (std_msgs/Bool) to cancel current goal
 Publishes /waypoint_status (std_msgs/String) for GUI status updates
-code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/waypoint_manager_node.py
+
+# code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/waypoint_manager_node.py
 
