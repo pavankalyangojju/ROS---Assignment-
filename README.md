@@ -22,6 +22,7 @@ your_package/
 │  └─ bringup_launch.py
 
 ├─ config/
+
 │  ├─ waypoints.yaml                   
 │  ├─ nav2_params.yaml                 
 │  └─ map.yaml + map.pgm 
