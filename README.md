@@ -16,7 +16,9 @@ All components (Gazebo, Nav2, RViz, waypoint_manager_node, GUI) are launched tog
 
 # File list
 your_package/
+
 ├─ launch/
+
 │  └─ bringup_launch.py
 
 ├─ config/
