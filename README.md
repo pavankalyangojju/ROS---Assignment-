@@ -18,12 +18,15 @@ All components (Gazebo, Nav2, RViz, waypoint_manager_node, GUI) are launched tog
 your_package/
 ├─ launch/
 │  └─ bringup_launch.py
+
 ├─ config/
 │  ├─ waypoints.yaml                   
 │  ├─ nav2_params.yaml                 
-│  └─ map.yaml + map.pgm               
+│  └─ map.yaml + map.pgm 
+
 ├─ rviz/
 │  └─ nav2_waypoints.rviz
+
 ├─ src/
 │  ├─ waypoint_manager_node.py         
 │  └─ gui_tkinter.py                   
