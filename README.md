@@ -55,4 +55,14 @@ When user clicks Go, it sends the list as a comma-separated String on waypoint_s
 Subscribes to waypoint_status to update an on-screen label.
 Stop publishes True on cancel_nav.
 
+Code :- https://github.com/pavankalyangojju/ROS---Assignment-/blob/main/gui_tkinter.py
+
+# Launch file
+A single launch that includes:
+--> Gazebo world (TurtleBot3) — you can reuse turtlebot3_gazebo launch,
+--> Nav2 bringup (map server, AMCL, nav2 bringup) — include existing nav2 launch files or minimal ones,
+--> Our two nodes (waypoint_manager_node and GUI),
+--> RViz.
+Below is a simplified example that assumes the user has installed standard TurtleBot3 + Nav2 packages. You will likely need to adapt paths to your installation and the map file. This launch includes our package nodes.
+
 Code :- 
